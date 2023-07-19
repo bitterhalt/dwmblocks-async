@@ -1,19 +1,17 @@
 #include "config.h"
-
 #include "block.h"
 #include "util.h"
 
-Block blocks[] = {
-    {"sb-mail",    600,  1 },
-    {"sb-music",   0,    2 },
-    {"sb-disk",    1800, 3 },
-    {"sb-memory",  10,   4 },
-    {"sb-loadavg", 5,    5 },
-    {"sb-mic",     0,    6 },
-    {"sb-record",  0,    7 },
-    {"sb-volume",  0,    8 },
-    {"sb-battery", 5,    9 },
-    {"sb-date",    1,    10},
+Block blocks[] = {    /*int*/  /*sign*/
+    {"sb-updates",      3600,   1},
+    {"sb-cpu",          2,      2},
+    {"sb-memory",       2,      3},
+    {"sb-network",      5,      4},
+    {"sb-dunst",        0,      8},
+    {"sb-lock",         0,      9},
+    {"sb-mic",          0,      7},
+    {"sb-volume",       60,     5},
+    {"sb-date",         60,     6},
 };
 
 const unsigned short blockCount = LEN(blocks);
