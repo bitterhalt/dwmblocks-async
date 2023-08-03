@@ -3,6 +3,7 @@
 #include "util.h"
 
 Block blocks[] = {    /*int*/  /*sign*/
+    {"sb-rec",          0,      10},
     {"sb-updates",      3600,   1},
     {"sb-cpu",          2,      2},
     {"sb-memory",       2,      3},
